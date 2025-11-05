@@ -121,7 +121,7 @@ const Home: React.FC = () => {
       <section className="px-6 md:px-20 grid md:grid-cols-2 gap-12 items-center mb-24 text-center md:text-left">
         <div className="order-2 md:order-1">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold uppercase mb-4">Bringing you the <span className="text-[#D87D4A]">best</span> audio gear</h2>
-          <p className="text-gray-500 leading-relaxed">Located at the heart of New York City, Audiophile is the premier store for high-end headphones, earphones, speakers, and audio accessories.</p>
+          <p className="text-gray-500 leading-relaxed">Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.</p>
         </div>
         <div className="order-1 md:order-2">
           {/* CORRECTED: Used Next.js Image component */}
