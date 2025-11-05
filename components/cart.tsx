@@ -53,7 +53,19 @@ const CartDropdown: React.FC = () => {
 
       {/* Dropdown */}
       {isOpen && (
-        <div className="absolute right-0 mt-3 w-80 bg-white rounded-lg shadow-2xl p-6 z-50 text-gray-800">
+         <>
+          {/* Overlay for mobile */}
+          <div
+            className="fixed inset-0 bg-black/40 z-40 sm:hidden"
+            onClick={() => setIsOpen(false)}
+          />
+
+        <div
+       className="z-50 bg-white rounded-lg shadow-2xl p-6 text-gray-800 w-80
+         transition-all duration-200 ease-out
+         sm:absolute sm:right-0 sm:mt-3
+         fixed sm:top-auto sm:left-auto sm:translate-x-0 sm:translate-y-0
+         top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           {/* Header */}
           <div className="flex justify-between items-center mb-6">
             <h4 className="font-bold uppercase text-sm">Cart ({getTotalItems()})</h4>
@@ -120,10 +132,12 @@ const CartDropdown: React.FC = () => {
             </>
           )}
         </div>
+         </>   
       )}
     </div>
   );
 };
 
 export default CartDropdown;
+
 
